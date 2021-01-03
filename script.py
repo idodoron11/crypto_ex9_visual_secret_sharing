@@ -52,6 +52,10 @@ def build_image_pair(img_a, img_b, img_c):
 
             entry_index = [(row,col), (row,col+1), (row+1,col), (row+1,col+1)]
 
+            # TODO: avoid code duplication. find a more general way to handle these cases.
+            #       to be honest, it was easier for me to split into cases, since there's
+            #       a lot of logic here, and i didn't want to spend too much time finding
+            #       a clever way to express this logic in general.
             if (color_a == "white") & (color_b == "white") & (color_c == "white"):
                 # (1) choose two black pixels for a.
                 # (2) of the two black pixels of a, choose one black pixel for b.
@@ -279,7 +283,6 @@ def create_new_image(img_a, w, b):
     return new_img
 
 
-# TODO: We first compute A. Later we compute B such that A XOR B = C.
 a_bw = convert_to_pure_bw('a.jpg').rotate(90)
 b_bw = convert_to_pure_bw('b.jpg').rotate(90)
 c_bw = convert_to_pure_bw('c.jpg').rotate(90)
