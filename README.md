@@ -18,7 +18,8 @@ Formally, the algorithm takes three black and white input pictures of size $w\ti
    	\text{black}	&	\text{otherwise}
    \end{cases}.
    $$
-   
+
+![Demonstration](https://github.com/idodoron11/crypto_ex9_visual_secret_sharing/raw/master/demonstration.gif)
 
 ## Example
 
@@ -46,6 +47,3 @@ $$
 	\text{black}	&	\text{otherwise}
 \end{cases}.
 $$
-
-
-## 
