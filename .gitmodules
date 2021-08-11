@@ -1,0 +1,3 @@
+[submodule "crypto_ex9_visual_secret_sharing"]
+	path = crypto_ex9_visual_secret_sharing
+	url = git@github.com:idodoron11/crypto_ex9_visual_secret_sharing.git
